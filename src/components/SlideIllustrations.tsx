@@ -333,6 +333,7 @@ export function VibeCodingToolsGrid({
   compact = false,
 }: VibeCodingToolsGridProps) {
   const gapClass = compact ? 'gap-3.5' : 'gap-5';
+  const baseUrl = import.meta.env.BASE_URL;
 
   return (
     <div
@@ -342,7 +343,7 @@ export function VibeCodingToolsGrid({
       <VibeCodingToolTile
         name="Google AI Studio"
         href="https://aistudio.google.com/apps"
-        src="/assets/aistudio/image_7fe11fb0.png"
+        src={`${baseUrl}assets/aistudio/image_7fe11fb0.png`}
         interactive={interactive}
         compact={compact}
       />
@@ -351,14 +352,14 @@ export function VibeCodingToolsGrid({
         <VibeCodingToolTile
           name="Lovable"
           href="https://lovable.dev/pt-br/"
-          src="/assets/aistudio/image_c0ad7bf8.png"
+          src={`${baseUrl}assets/aistudio/image_c0ad7bf8.png`}
           interactive={interactive}
           compact={compact}
         />
         <VibeCodingToolTile
           name="Cursor"
           href="https://cursor.com/pt-BR/home"
-          src="/assets/aistudio/image_eb35fab7.png"
+          src={`${baseUrl}assets/aistudio/image_eb35fab7.png`}
           interactive={interactive}
           compact={compact}
         />
@@ -368,7 +369,7 @@ export function VibeCodingToolsGrid({
         <VibeCodingToolTile
           name="v0"
           href="https://v0.app/"
-          src="/assets/aistudio/image_afb7b2df.png"
+          src={`${baseUrl}assets/aistudio/image_afb7b2df.png`}
           compactPadding
           interactive={interactive}
           compact={compact}
@@ -376,7 +377,7 @@ export function VibeCodingToolsGrid({
         <VibeCodingToolTile
           name="Bolt"
           href="https://bolt.new/"
-          src="/assets/aistudio/image_b91f6855.png"
+          src={`${baseUrl}assets/aistudio/image_b91f6855.png`}
           compactPadding
           interactive={interactive}
           compact={compact}
