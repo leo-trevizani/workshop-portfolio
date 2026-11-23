@@ -1,7 +1,7 @@
 import { ArrowDown } from 'lucide-react';
 import { SLIDE_1 } from '../../data/slidesContent';
+import { ShaderReveal } from '../ShaderReveal';
 import { SlideFooter, UbiquaFlowerMark } from '../SlideChrome';
-import { PortfolioSatchelWireframe } from '../SlideIllustrations';
 
 interface SlideCoverProps {
   onNext: () => void;
@@ -21,8 +21,8 @@ export function SlideCover({ onNext }: SlideCoverProps) {
       </div>
 
       {/* Main split hero */}
-      <div className="w-full max-w-[1200px] mx-auto my-auto py-8 grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
-        <div className="lg:col-span-6 space-y-6">
+      <div className="w-full max-w-[1200px] mx-auto my-auto py-8 grid grid-cols-1 lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] xl:grid-cols-[minmax(0,5fr)_minmax(0,8fr)] gap-10 lg:gap-12 xl:gap-14 items-center lg:pr-4">
+        <div className="space-y-6">
           <div className="inline-block border-b-2 border-[#34A853] pb-1.5">
             <span className="text-xs sm:text-sm font-semibold tracking-[0.22em] text-[#D6EEDD]">
               {SLIDE_1.kicker}
@@ -53,8 +53,21 @@ export function SlideCover({ onNext }: SlideCoverProps) {
           </div>
         </div>
 
-        <div className="lg:col-span-6 flex items-center justify-center">
-          <PortfolioSatchelWireframe />
+        <div className="w-full flex items-center justify-center">
+          <div className="w-full overflow-hidden rounded-[16px] border border-[#D6EEDD]/25 bg-[#28342C]">
+            <ShaderReveal
+              frontImage={`${import.meta.env.BASE_URL}src/assets/images/hero_wireframe_dark_1795468572470.jpg`}
+              backImage={`${import.meta.env.BASE_URL}assets/aistudio/image_0a08c72c.png`}
+              alt="Wireframe dark mode com revelação líquida do portfólio ao passar o cursor"
+              mouseForce={45}
+              cursorSize={240}
+              resolution={0.5}
+              isViscous
+              revealSoftness={0.32}
+              revealStrength={1.0}
+              className="w-full aspect-[1376/768]"
+            />
+          </div>
         </div>
       </div>
 

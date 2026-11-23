@@ -64,8 +64,8 @@ export const SLIDE_TITLES = [
 
 export const SLIDE_1 = {
   kicker: 'DESIGN LAB',
-  titleLine1: 'Workshop de',
-  titleLine2: 'Portfólio',
+  titleLine1: 'Workshop de Portfólio',
+  titleLine2: '',
   subtitleLine1: 'Falando a linguagem',
   subtitleLine2: 'do mercado',
   institution: INSTITUTION_NAME,
