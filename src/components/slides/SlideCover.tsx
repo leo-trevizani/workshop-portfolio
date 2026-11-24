@@ -1,4 +1,4 @@
-import { ArrowDown } from 'lucide-react';
+import { ArrowDown, Mail } from 'lucide-react';
 import { SLIDE_1 } from '../../data/slidesContent';
 import { ShaderReveal } from '../ShaderReveal';
 import { SlideFooter, UbiquaFlowerMark } from '../SlideChrome';
@@ -41,7 +41,7 @@ export function SlideCover({ onNext }: SlideCoverProps) {
             {SLIDE_1.subtitleLine2}
           </p>
 
-          <div className="pt-2">
+          <div className="pt-2 flex flex-wrap items-center gap-4">
             <button
               type="button"
               onClick={onNext}
@@ -50,6 +50,16 @@ export function SlideCover({ onNext }: SlideCoverProps) {
               <span>Avançar</span>
               <ArrowDown className="w-4 h-4" />
             </button>
+
+            <a
+              href="https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7486196353698578432"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2.5 px-6 py-3 rounded-full border border-[#D6EEDD]/65 bg-transparent text-[#F5FFF8] text-sm sm:text-base font-medium hover:bg-[#D6EEDD]/15 hover:border-[#34A853] transition-colors duration-150 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#34A853] whitespace-nowrap shrink-0"
+            >
+              <Mail className="w-4 h-4 text-[#34A853]" aria-hidden="true" />
+              <span>Assine a newsletter</span>
+            </a>
           </div>
         </div>
 
